@@ -15,7 +15,7 @@ We have also started developing a **handcrafted method for shadows removal** bas
 [this article](https://www.researchgate.net/publication/274563892_Shadow_Detection_and_Removal_from_a_Single_Image_Using_LAB_Color_Space). 
 However, only **RGB shadow removal has been implemented so far and it doesn't increase model's accuracy**.
 <br>
-See [this notebook](./notebooks/clouds_shadows_detection)) for neat visualization of methods mentioned above.
+See [this notebook](./notebooks/clouds_shadows_detection) for neat visualization of methods mentioned above.
 <br>
 However, we hope that the biggest possible game changer will be applying ideas from [this article](https://arxiv.org/pdf/1911.07747.pdf). 
 The authors state that **ConvNets are not capable of learning some useful global features**. They precalculate features and inject them in the last FC layers. <br>
