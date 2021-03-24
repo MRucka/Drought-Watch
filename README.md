@@ -1,5 +1,3 @@
-# drought-watch
-
 ## ConvNet drought conditions prediction using multispectral satellite images
 
 This repo is a record of our (me along with my 2 university friends) struggles to take first place in 
