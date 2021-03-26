@@ -15,15 +15,15 @@ We have also started developing a **handcrafted method for shadows removal** bas
 [this article](https://www.researchgate.net/publication/274563892_Shadow_Detection_and_Removal_from_a_Single_Image_Using_LAB_Color_Space). 
 However, only **RGB shadow removal has been implemented so far and it doesn't increase model's accuracy**.
 <br>
-See [this notebook](./notebooks/clouds_shadows_detection) for neat visualization of methods mentioned above.
+See [this notebook](./notebooks/clouds_shadows) for neat visualization of methods mentioned above.
 <br>
 However, we hope that the biggest possible game changer will be applying ideas from [this article](https://arxiv.org/pdf/1911.07747.pdf). 
 The authors state that **ConvNets are not capable of learning some useful global features**. They precalculate features and inject them in the last FC layers. <br>
-A [script](../tests/haralick.py) for calculating the features has been already implemented, but calculations are presently too slow to use 
+A [script](../notebooks/haralick_performance.ipynb) for calculating the features has been already implemented, but calculations are presently too slow to use 
 it while training on account of no vectorization (100ms vs 2s).
 
 ## What we have achieved so far
-We've developed a high-accuracy model by searching for the best hyperparameters and utilizing clouds detection mentioned above.
+We've developed a high-accuracy, 3rd place (77.08%) model by searching for the best hyperparameters and utilizing clouds detection mentioned above. <br>
 
 ## Environment
 The model was developed and trained using TensorFlow 2 and Google Colab Tesla P100-PCIE-16GB.
@@ -31,5 +31,6 @@ The model was developed and trained using TensorFlow 2 and Google Colab Tesla P1
 ## What's next
 In the near future, we are going to try:
 * EfficientNet;
-* haralick.py vectorization;
-* Data Augmentation techniques.
+* Haralick features code review & vectorization;
+* clouds detection code vectorization;
+* data augmentation techniques.
