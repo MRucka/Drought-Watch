@@ -25,7 +25,7 @@ A [script](./notebooks/haralick_performance.ipynb) for calculating the features 
 it while training on account of no vectorization (100ms vs 2s).
 
 ## What we have achieved so far
-We've developed a high-accuracy, 3rd place (77.13%) model by searching for the best hyperparameters and utilizing clouds detection mentioned above. <br>
+**We've developed a high-accuracy, 3rd place (77.13%) model** by searching for the best hyperparameters and utilizing clouds detection mentioned above. <br>
 The model seems to be too complex ([oscilating val_accuracy](./saved/history.png)), but there's still much to be done! <br>
 
 ## Environment
